@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remate Estructura CrossFit — 18 metros de hierro macizo</title>
+<meta name="description" content="Remate de estructura CrossFit gigante de 18 metros, puro hierro macizo. Se desmonta y se vuelve a montar de diferentes maneras. Gs. 15.000.000 (precio real Gs. 35.000.000). Asunción, Paraguay.">
+<meta property="og:title" content="Remate: gigante CrossFit de 18 metros — menos de la mitad de precio">
+<meta property="og:description" content="Puro hierro macizo, modular: se arma como un solo gigante o en módulos separados. Tu gimnasio ya armado por Gs. 15.000.000 (precio real Gs. 35.000.000).">
+<meta property="og:image" content="https://remate.lacasonalafuente.com/crossfit/assets/og.jpg">
+<meta property="og:url" content="https://remate.lacasonalafuente.com/crossfit/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-bg.jpg">
+<style>
+:root{
+  --bg:#0c0a0a;
+  --bg2:#131010;
+  --bg-card:#1d1717;
+  --accent:#e04040;
+  --accent-light:#ff6b6b;
+  --accent-dark:#a81f1f;
+  --green:#25D366;
+  --green-dark:#1da851;
+  --text:#f5f0f0;
+  --text2:#b8a8a8;
+  --text3:#80666a;
+  --border:rgba(255,255,255,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:70px 0}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 0}
+.hero-bg{position:absolute;inset:0;background:url('assets/hero-bg.jpg') center/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,10,.72) 0%,rgba(12,10,10,.82) 60%,var(--bg) 100%)}
+.hero-content{position:relative;z-index:2;padding:20px}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-weight:800;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;padding:8px 22px;border-radius:100px;margin-bottom:22px;animation:pulse-badge 2s infinite}
+@keyframes pulse-badge{0%,100%{box-shadow:0 0 0 0 rgba(224,64,64,.55)}50%{box-shadow:0 0 0 14px rgba(224,64,64,0)}}
+.hero h1{font-size:clamp(2.1rem,6vw,3.8rem);font-weight:900;line-height:1.12;margin-bottom:16px}
+.hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent-light));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(1rem,2.4vw,1.25rem);color:var(--text2);max-width:660px;margin:0 auto 30px}
+.btn-wa{display:inline-flex;align-items:center;gap:12px;background:var(--green);color:#fff;font-weight:800;font-size:1.1rem;padding:17px 36px;border-radius:100px;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 30px rgba(37,211,102,.35);animation:pulse-wa 2.4s infinite}
+@keyframes pulse-wa{0%,100%{box-shadow:0 6px 30px rgba(37,211,102,.35)}50%{box-shadow:0 6px 44px rgba(37,211,102,.6)}}
+.btn-wa:hover{transform:translateY(-3px);background:var(--green-dark)}
+.btn-wa svg{width:26px;height:26px;flex-shrink:0}
+
+/* ===== TITULOS ===== */
+.section-title{text-align:center;margin-bottom:44px}
+.section-title .kicker{color:var(--accent);font-weight:800;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:8px}
+.section-title h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:900;line-height:1.2}
+.section-title p{color:var(--text2);max-width:620px;margin:12px auto 0}
+
+/* ===== OFERTA ===== */
+.oferta{background:var(--bg2)}
+.oferta-grid{display:grid;gap:20px;grid-template-columns:1fr;max-width:860px;margin:0 auto}
+.precio-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:34px 28px;text-align:center}
+.precio-card.destacada{border:2px solid var(--accent);box-shadow:0 0 50px rgba(224,64,64,.18)}
+.precio-card .etiqueta{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:10px}
+.precio-card.destacada .etiqueta{color:var(--accent)}
+.precio-card .monto{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:900}
+.precio-card.destacada .monto{color:var(--accent)}
+.precio-card .tachado{text-decoration:line-through;color:var(--text3)}
+.precio-card .detalle{color:var(--text2);font-size:.95rem;margin-top:8px}
+.ahorro-strip{max-width:860px;margin:24px auto 0;background:linear-gradient(90deg,rgba(224,64,64,.14),rgba(255,107,107,.07));border:1px solid rgba(224,64,64,.35);border-radius:16px;padding:20px 26px;text-align:center;font-weight:700;font-size:1.05rem}
+.ahorro-strip strong{color:var(--accent-light)}
+
+/* ===== FEATURES ===== */
+.inv-grid{display:grid;gap:20px;grid-template-columns:1fr}
+.inv-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;gap:18px;align-items:flex-start;transition:border-color .2s,transform .2s}
+.inv-card:hover{border-color:rgba(224,64,64,.5);transform:translateY(-3px)}
+.inv-ico{font-size:2rem;line-height:1;min-width:48px}
+.inv-card h3{font-size:1.15rem;font-weight:800;margin-bottom:6px}
+.inv-card p{color:var(--text2);font-size:.95rem}
+
+/* ===== VIDEO ===== */
+.video-wrap{display:flex;justify-content:center}
+.video-wrap video{max-height:76vh;max-width:100%;border-radius:18px;border:1px solid var(--border);background:#000}
+
+/* ===== MODELOS / GALERIA ===== */
+.modelos{background:var(--bg2)}
+.modelos-grid{display:grid;gap:18px;grid-template-columns:1fr}
+.modelo-item{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--border);cursor:pointer}
+.modelo-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.modelo-item:hover img{transform:scale(1.04)}
+.modelo-item .cap{position:absolute;left:0;right:0;bottom:0;padding:36px 18px 14px;background:linear-gradient(180deg,transparent,rgba(12,10,10,.9));font-weight:700;font-size:.95rem}
+.galeria-grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+.galeria-grid .foto{border-radius:12px;overflow:hidden;border:1px solid var(--border);cursor:pointer;aspect-ratio:4/3;background:var(--bg-card)}
+.galeria-grid .foto img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.galeria-grid .foto:hover img{transform:scale(1.06)}
+
+/* ===== CTA FINAL ===== */
+.cta-final{background:linear-gradient(180deg,var(--bg) 0%,#1e0f11 100%);text-align:center}
+.cta-final h2{font-size:clamp(1.8rem,5vw,2.7rem);font-weight:900;margin-bottom:14px}
+.cta-final h2 span{color:var(--accent)}
+.cta-final p{color:var(--text2);max-width:560px;margin:0 auto 30px}
+
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--text3);font-size:.85rem}
+footer a{color:var(--text2)}
+footer a:hover{color:var(--accent)}
+
+/* ===== LIGHTBOX ===== */
+.lightbox{position:fixed;inset:0;background:rgba(8,5,5,.94);display:none;align-items:center;justify-content:center;z-index:1000}
+.lightbox.abierto{display:flex}
+.lightbox img{max-width:92vw;max-height:86vh;object-fit:contain;border-radius:8px}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.08);border:1px solid var(--border);color:#fff;font-size:1.6rem;width:48px;height:48px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;user-select:none}
+.lb-btn:hover{background:var(--accent)}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-cerrar{position:absolute;top:16px;right:16px;transform:none}
+
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:900;background:var(--green);width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px}
+
+@media(min-width:700px){
+  .oferta-grid{grid-template-columns:1fr 1fr}
+  .inv-grid{grid-template-columns:repeat(2,1fr)}
+  .modelos-grid{grid-template-columns:1fr 1fr}
+  .galeria-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:1000px){
+  .galeria-grid{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content container">
+    <span class="badge">🔥 Remate — pieza única</span>
+    <h1>Rematamos un gigante<br><span>de puro hierro macizo</span></h1>
+    <p>Estructura CrossFit de 18 metros. La montás en tu gimnasio como un solo gigante, o la desarmás y combinás en módulos de diferentes maneras. Tenés todo tu gimnasio ya armado.</p>
+    <a class="btn-wa" href="https://wa.me/595982790407?text=Hola%20Iv%C3%A1n%2C%20me%20interesa%20la%20estructura%20CrossFit%20del%20remate%20%F0%9F%92%AA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Consultar por WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- MODELOS -->
+<section id="ambientes">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">Imaginalo en tu gimnasio</span>
+      <h2>Así queda montado el gigante</h2>
+      <p>Ambientaciones de referencia armadas con esta misma estructura.</p>
+    </div>
+    <div class="modelos-grid">
+      <div class="modelo-item" data-full="assets/modelo-gym-1.jpg"><img src="assets/modelo-gym-1-sm.jpg" alt="Estructura CrossFit montada en un box con atletas entrenando" loading="lazy" decoding="async"><div class="cap">🏋️ Montado como box de CrossFit</div></div>
+      <div class="modelo-item" data-full="assets/modelo-gym-2.jpg"><img src="assets/modelo-gym-2-sm.jpg" alt="Estructura CrossFit en módulos combinados dentro de un gimnasio" loading="lazy" decoding="async"><div class="cap">💪 Combinado en módulos separados</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="oferta" id="oferta">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">La oferta</span>
+      <h2>Menos de la mitad de su precio</h2>
+      <p>Una sola estructura, un solo comprador. El primero que confirma se lleva el gigante.</p>
+    </div>
+    <div class="oferta-grid">
+      <div class="precio-card">
+        <div class="etiqueta">Precio real</div>
+        <div class="monto tachado">Gs. 35.000.000</div>
+        <div class="detalle">estructura completa de 18 metros</div>
+      </div>
+      <div class="precio-card destacada">
+        <div class="etiqueta">Precio de remate</div>
+        <div class="monto">Gs. 15.000.000</div>
+        <div class="detalle">tu gimnasio ya armado</div>
+      </div>
+    </div>
+    <div class="ahorro-strip">💰 Te ahorrás <strong>Gs. 20.000.000</strong> — un 57% menos que el precio real</div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">Miralo en movimiento</span>
+      <h2>El gigante, tal cual está hoy</h2>
+    </div>
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="assets/video-poster.jpg" src="assets/video-rig.mp4"></video>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="modelos" id="detalle">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">El gigante en detalle</span>
+      <h2>18 metros que se arman como quieras</h2>
+    </div>
+    <div class="inv-grid">
+      <div class="inv-card">
+        <div class="inv-ico">📏</div>
+        <div>
+          <h3>18 metros de estructura</h3>
+          <p>Un gigante de puro hierro macizo, construido para aguantar años de entrenamiento pesado.</p>
+        </div>
+      </div>
+      <div class="inv-card">
+        <div class="inv-ico">🔩</div>
+        <div>
+          <h3>Se desmonta y se vuelve a montar</h3>
+          <p>La desarmás, la trasladás y la montás en tu gimnasio como quieras, las veces que quieras.</p>
+        </div>
+      </div>
+      <div class="inv-card">
+        <div class="inv-ico">🧩</div>
+        <div>
+          <h3>Módulos combinables</h3>
+          <p>La armás como un solo gigante o la dividís en varios módulos independientes, en diferentes configuraciones.</p>
+        </div>
+      </div>
+      <div class="inv-card">
+        <div class="inv-ico">⚙️</div>
+        <div>
+          <h3>Perfiles perforados</h3>
+          <p>Perforaciones a lo largo de toda la estructura para fijar barras y accesorios a la altura que necesites.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">Fotos reales</span>
+      <h2>La estructura tal cual está hoy</h2>
+      <p>Sin filtros ni retoques — lo que ves es lo que retirás.</p>
+    </div>
+    <div class="galeria-grid" id="galeriaGrid"></div>
+  </div>
+</section>
+
+<!-- MODELOS BIS -->
+<section class="modelos" id="ambientes-final">
+  <div class="container">
+    <div class="section-title">
+      <span class="kicker">Una última mirada</span>
+      <h2>Listo para armar tu box</h2>
+    </div>
+    <div class="modelos-grid">
+      <div class="modelo-item" data-full="assets/modelo-gym-1.jpg"><img src="assets/modelo-gym-1-sm.jpg" alt="Estructura CrossFit montada en un box" loading="lazy" decoding="async"><div class="cap">🏋️ Box de CrossFit</div></div>
+      <div class="modelo-item" data-full="assets/modelo-gym-2.jpg"><img src="assets/modelo-gym-2-sm.jpg" alt="Estructura CrossFit en módulos" loading="lazy" decoding="async"><div class="cap">💪 Módulos combinados</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Gs. 15.000.000 <span>· el gigante completo</span></h2>
+    <p>Puro hierro macizo, 18 metros, infinitas formas de armarlo. Tenés todo tu gimnasio ya armado — el primero que confirma, se lo lleva.</p>
+    <a class="btn-wa" href="https://wa.me/595982790407?text=Hola%20Iv%C3%A1n%2C%20me%20interesa%20la%20estructura%20CrossFit%20del%20remate%20%F0%9F%92%AA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Escribime por WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Remate · Asunción, Paraguay · <a href="/">ver todo el remate</a> · <a href="https://www.lacasonalafuente.com" target="_blank" rel="noopener">lacasonalafuente.com</a></p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/595982790407?text=Hola%20Iv%C3%A1n%2C%20me%20interesa%20la%20estructura%20CrossFit%20del%20remate%20%F0%9F%92%AA" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-cerrar" id="lbCerrar" aria-label="Cerrar">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <img id="lbImg" src="" alt="Foto ampliada">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Siguiente">›</button>
+</div>
+
+<script>
+// Galería: 14 fotos reales (thumb en grilla, full en lightbox)
+const TOTAL_FOTOS = 14;
+const grid = document.getElementById('galeriaGrid');
+const fotos = [];
+for (let i = 1; i <= TOTAL_FOTOS; i++) {
+  const num = String(i).padStart(2, '0');
+  fotos.push('assets/rig-' + num + '.jpg');
+  const div = document.createElement('div');
+  div.className = 'foto';
+  div.innerHTML = '<img src="assets/rig-' + num + '-thumb.jpg" alt="Estructura CrossFit — foto real ' + i + '" loading="lazy" decoding="async">';
+  div.addEventListener('click', () => abrirLightbox(fotos, i - 1));
+  grid.appendChild(div);
+}
+
+// Modelos también abren el lightbox
+const modelosFull = Array.from(document.querySelectorAll('.modelo-item')).map(el => el.dataset.full);
+document.querySelectorAll('.modelo-item').forEach((el, idx) => {
+  el.addEventListener('click', () => abrirLightbox(modelosFull, idx));
+});
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+let coleccion = [], actual = 0;
+function abrirLightbox(lista, idx) {
+  coleccion = lista; actual = idx;
+  lbImg.src = coleccion[actual];
+  lb.classList.add('abierto');
+  document.body.style.overflow = 'hidden';
+}
+function cerrarLightbox() {
+  lb.classList.remove('abierto');
+  document.body.style.overflow = '';
+}
+function mover(dir) {
+  actual = (actual + dir + coleccion.length) % coleccion.length;
+  lbImg.src = coleccion[actual];
+}
+document.getElementById('lbCerrar').addEventListener('click', cerrarLightbox);
+document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); mover(-1); });
+document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); mover(1); });
+lb.addEventListener('click', e => { if (e.target === lb) cerrarLightbox(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('abierto')) return;
+  if (e.key === 'Escape') cerrarLightbox();
+  if (e.key === 'ArrowLeft') mover(-1);
+  if (e.key === 'ArrowRight') mover(1);
+});
+</script>
+</body>
+</html>
