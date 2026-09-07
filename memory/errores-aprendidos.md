@@ -2,6 +2,24 @@
 
 > Lo mas reciente arriba. Que fallo · causa raiz · como se resolvio · regla para la proxima.
 
+## 2026-09-07 — Bajar el precio dejo texto derivado que ya no era cierto
+
+**Que fallo:** al bajar el rack de crossfit a Gs. 8.500.000, cambiar el monto no alcanzaba:
+la pagina seguia diciendo "te ahorras Gs. 22.500.000", "64% menos" y el titular "Menos de la
+mitad de su precio" — los tres calculados sobre el precio viejo. Se detecto y corrigio antes
+de pushear, pero el 28/08 (sofas) ya habia pasado lo mismo.
+
+**Causa raiz:** el precio no vive en un solo lugar ni en una variable. Esta escrito a mano en
+5 puntos (meta description, og:description, tarjeta de oferta, h2 del CTA final, card del
+indice raiz) y ademas hay **texto derivado** — el monto ahorrado, el porcentaje y frases como
+"menos de la mitad" — que un buscar-y-reemplazar del monto no toca.
+
+**Como se resolvio:** se recalculo a mano (35.000.000 - 8.500.000 = 26.500.000, o sea 76%) y
+el titular paso a "Menos de la cuarta parte de su precio", tambien en el og:title.
+
+**Regla:** despues de cambiar un precio, greppear el monto viejo Y el ahorro, el `%` y las
+frases del tipo "mitad"/"menos de" en todo el repo. El ahorro se calcula, no se copia.
+
 ## 2026-08-28 — La web seguia con los precios viejos despues del push
 
 **Que fallo:** se actualizaron los precios (sofas a Gs. 3.900.000, rack a Gs. 12.500.000),
